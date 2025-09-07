@@ -91,6 +91,21 @@ If you use this work in your research, please cite our paper:
 ```
 (Note: Please update the booktitle and year once we have them.)
 ---
+---
+
+### Key References
+
+This work is a comparative analysis based on the principles from the following foundational papers:
+
+[1] H. Li and Y. Fu, "FCDFusion: A Fast, Low Color Deviation Method for Fusing Visible and Infrared Image Pairs." *Computational Visual Media*, 2025.
+
+[2] M. K. Panda, et al., "A Weight Induced Contrast Map for Infrared and Visible Image Fusion." *Computers and Electrical Engineering*, 2024.
+
+[3] Y. Zhang, et al., "Infrared and Visible Image Fusion with Hybrid Image Filtering." *Mathematical Problems in Engineering*, 2020.
+
+[4] D. Connah, et al., "Spectral Edge: Gradient-Preserving Spectral Mapping for Image Fusion." *Journal of the Optical Society of America A*, 2015.
+
+---
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ### Acknowledgments
