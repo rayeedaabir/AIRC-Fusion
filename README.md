@@ -84,8 +84,8 @@ If you use this work in your research, please cite our paper:
 ```
 @inproceedings{AIRC-Fusion2025,
   title={AIRC-Fusion: Achieving Real-Time Infrared-Visible (IR-VIS) Video Fusion on CPU-based Hardware},
-  author={Ahsan, Rayeed Aabir and Islam, Rejmin and Hridi, Fariha Rahman and Prianka, Maria Chowdhury},
-  booktitle={Your Conference or Journal Name},
+  author={Ahsan, Islam, Rahman, Chowdhury},
+  booktitle={Conference or Journal Name (TBD)},
   year={2025}
 }
 ```
