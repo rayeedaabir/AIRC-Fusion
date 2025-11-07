@@ -1,0 +1,7 @@
+This folder contains the side-by-side comparisons for all 5 fusion approaches, with the videos listed with their respective names as given in the paper:
+
+1. Vectorized_FCDFusion
+2. Pixel_FCDFusion
+3. Model2015
+4. Model2020
+5. Model2024
