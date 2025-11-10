@@ -89,7 +89,7 @@ If you use this work in your research, please cite our paper:
   year={2025}
 }
 ```
-(Note: Please update the booktitle and year once we have them.)
+(Note: We will update the booktitle and year once we have them as the paper is currently in review at Engineering Applications of Artificial Intelligence journal.)
 ---
 ---
 
@@ -110,4 +110,3 @@ This work is a comparative analysis based on the principles from the following f
 This project is licensed under the MIT License. See the LICENSE file for details.
 ### Acknowledgments
 We would like to thank our faculty advisor, Dr. Mohammad Rashedur Rahman, for his invaluable guidance and support throughout this project.
-
