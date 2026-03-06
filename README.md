@@ -89,7 +89,7 @@ If you use this work in your research, please cite our paper:
   year={2025}
 }
 ```
-(Note: We will update the booktitle and year once we have them as the paper is currently in review at Engineering Applications of Artificial Intelligence journal.)
+(Note: We will update the booktitle and year once we have them as the paper is currently in review.)
 ---
 ---
 
