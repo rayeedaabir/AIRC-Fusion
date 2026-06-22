@@ -6,7 +6,7 @@ from tqdm import tqdm
 import json
 from typing import Optional, List, Tuple
 
-# --- Helper function to collect triplets for SBS when not using JSON map ---
+# --- Helpers function to collect triplets for SBS when not using JSON map ---
 def collect_sbs_triplets_from_basenames(
     visible_dir: str, 
     thermal_dir: str, 
