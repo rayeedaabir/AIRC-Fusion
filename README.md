@@ -7,8 +7,8 @@ together with a lightweight **Temporal Instability Score** for measuring frame-t
 This repository accompanies the manuscript *"Real-Time Infrared and Visible Video Fusion on
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
-- **Paper DOI:** _added on publication_
-- **Archived code & data (Zenodo):** `[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.20793801)`; see "Archiving" below)_
+- **Paper DOI:** _to be added after publication_
+- **Archived code & data (Zenodo):** `[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.20793801)`
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
@@ -38,12 +38,12 @@ AIRC-Fusion/
   config.py  option.py  video_utils.py  benchmark_utils.py
 
   # Faithful baseline implementations
-  model_2015_v4.py               # Model2015  (Connah spectral edge)
-  model_2020_fixed.py            # Model2013  (GFF, Li/Kang/Hu 2013)
-  model_2024_panda.py            # Model2024  (Panda 2024)
-  latent_lrr.py train_mdlatlrr.py model_mdlatlrr.py   # MDLatLRR
-  model_densefuse_official.py    # DenseFuse (official architecture)
-  models/                        # trained weights: L_8.npy, densefuse.model
+  model_2015_v4.py                                     # Model2015  (Connah spectral edge)
+  model_2020_fixed.py                                  # Model2013  (GFF, Li/Kang/Hu 2013)
+  model_2024_panda.py                                  # Model2024  (Panda 2024)
+  latent_lrr.py train_mdlatlrr.py model_mdlatlrr.py    # MDLatLRR
+  model_densefuse_official.py                          # DenseFuse (official architecture)
+  models/                                              # trained weights: L_8.npy, densefuse.model
 
   # Figure / table / output generators
   make_figures.py                # speed-fidelity scatter, radar, speed bars (from the workbook)
@@ -61,10 +61,6 @@ AIRC-Fusion/
   docs/                          # BASELINE_AUDIT.md, TEMPORAL_SCORE_NOTE.md, CHANGES_AIRC_README.md
   supplementary/                 # full tables, MATD profiles, static panels, pseudocode (or see Zenodo)
 ```
-
-> Cleanup before pushing: delete `__pycache__/`, `desktop.ini`, and the duplicate `req.txt`;
-> keep a single `requirements.txt`. A `.gitignore` containing `__pycache__/`, `*.pyc`,
-> `desktop.ini`, and your local `*_runs/` output folder is included.
 
 ## Datasets
 
