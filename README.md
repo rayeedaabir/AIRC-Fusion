@@ -8,7 +8,7 @@ This repository accompanies the manuscript *"Real-Time Infrared and Visible Vide
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
 - **Paper DOI:** _added on publication_
-- **Archived code & data (Zenodo):** `10.5281/zenodo.XXXXXXX` _(mint at submission; see "Archiving" below)_
+- **Archived code & data (Zenodo):** `[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.20793801)`; see "Archiving" below)_
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
@@ -125,29 +125,12 @@ full per-dataset metric tables with 95% confidence intervals, the complete MATD 
 datasets and methods, the RGB-NIR and Landsat qualitative panels, the comparison videos, and the
 algorithm pseudocode with a pipeline flowchart. Large video files are hosted in the Zenodo record.
 
-## Archiving and the Zenodo DOI
-
-1. Push this repository to GitHub.
-2. Sign in to https://zenodo.org with your GitHub account, open **GitHub** settings, and toggle this
-   repository **on**.
-3. On GitHub, create a **Release** (e.g., `v1.0.0`). Zenodo automatically archives that release and
-   issues a DOI.
-4. Replace `10.5281/zenodo.XXXXXXX` above and in the manuscript's Data Availability statement with
-   the minted DOI. (Large videos that exceed GitHub limits can be uploaded directly to the same
-   Zenodo record.)
-
 ## Citation
 
 ```
 Ahsan RA, Islam R, Hridi FR, Prianka MC, Rahman RM. Real-Time Infrared and Visible Video Fusion on
 Processor-Only Edge Hardware Using Vectorized Direct Mapping. Cureus Journal of Computer Science. (year).
 ```
-
-## Use of AI tools
-
-Large language models (Google Gemini and Anthropic Claude) assisted with drafting source code and
-with language editing. All experiments were designed, executed, and verified by the authors, who take
-full responsibility for the content.
 
 ## Acknowledgements
 
