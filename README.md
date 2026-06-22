@@ -7,8 +7,8 @@ together with a lightweight **Temporal Instability Score** for measuring frame-t
 This repository accompanies the manuscript *"Real-Time Infrared and Visible Video Fusion on
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
-- **Paper DOI:** _added on publication_
-- **Archived code & data (Zenodo):** `10.5281/zenodo.XXXXXXX` _(mint at submission; see "Archiving" below)_
+- **Paper DOI:** _to be added after publication_
+- **Archived code & data (Zenodo):** `[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.20793801)`
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
@@ -38,12 +38,12 @@ AIRC-Fusion/
   config.py  option.py  video_utils.py  benchmark_utils.py
 
   # Faithful baseline implementations
-  model_2015_v4.py               # Model2015  (Connah spectral edge)
-  model_2020_fixed.py            # Model2013  (GFF, Li/Kang/Hu 2013)
-  model_2024_panda.py            # Model2024  (Panda 2024)
-  latent_lrr.py train_mdlatlrr.py model_mdlatlrr.py   # MDLatLRR
-  model_densefuse_official.py    # DenseFuse (official architecture)
-  models/                        # trained weights: L_8.npy, densefuse.model
+  model_2015_v4.py                                     # Model2015  (Connah spectral edge)
+  model_2020_fixed.py                                  # Model2013  (GFF, Li/Kang/Hu 2013)
+  model_2024_panda.py                                  # Model2024  (Panda 2024)
+  latent_lrr.py train_mdlatlrr.py model_mdlatlrr.py    # MDLatLRR
+  model_densefuse_official.py                          # DenseFuse (official architecture)
+  models/                                              # trained weights: L_8.npy, densefuse.model
 
   # Figure / table / output generators
   make_figures.py                # speed-fidelity scatter, radar, speed bars (from the workbook)
@@ -61,10 +61,6 @@ AIRC-Fusion/
   docs/                          # BASELINE_AUDIT.md, TEMPORAL_SCORE_NOTE.md, CHANGES_AIRC_README.md
   supplementary/                 # full tables, MATD profiles, static panels, pseudocode (or see Zenodo)
 ```
-
-> Cleanup before pushing: delete `__pycache__/`, `desktop.ini`, and the duplicate `req.txt`;
-> keep a single `requirements.txt`. A `.gitignore` containing `__pycache__/`, `*.pyc`,
-> `desktop.ini`, and your local `*_runs/` output folder is included.
 
 ## Datasets
 
@@ -125,29 +121,12 @@ full per-dataset metric tables with 95% confidence intervals, the complete MATD 
 datasets and methods, the RGB-NIR and Landsat qualitative panels, the comparison videos, and the
 algorithm pseudocode with a pipeline flowchart. Large video files are hosted in the Zenodo record.
 
-## Archiving and the Zenodo DOI
-
-1. Push this repository to GitHub.
-2. Sign in to https://zenodo.org with your GitHub account, open **GitHub** settings, and toggle this
-   repository **on**.
-3. On GitHub, create a **Release** (e.g., `v1.0.0`). Zenodo automatically archives that release and
-   issues a DOI.
-4. Replace `10.5281/zenodo.XXXXXXX` above and in the manuscript's Data Availability statement with
-   the minted DOI. (Large videos that exceed GitHub limits can be uploaded directly to the same
-   Zenodo record.)
-
 ## Citation
 
 ```
 Ahsan RA, Islam R, Hridi FR, Prianka MC, Rahman RM. Real-Time Infrared and Visible Video Fusion on
 Processor-Only Edge Hardware Using Vectorized Direct Mapping. Cureus Journal of Computer Science. (year).
 ```
-
-## Use of AI tools
-
-Large language models (Google Gemini and Anthropic Claude) assisted with drafting source code and
-with language editing. All experiments were designed, executed, and verified by the authors, who take
-full responsibility for the content.
 
 ## Acknowledgements
 
