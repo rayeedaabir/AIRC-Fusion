@@ -8,7 +8,7 @@ This repository accompanies the manuscript *"Real-Time Infrared and Visible Vide
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
 - **Paper DOI:** _to be added after publication_
-- **Archived code & data (Zenodo):** `[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.20793801)`
+- **Archived code & data (Zenodo):** `[10.5281/zenodo.20793801](https://doi.org/10.5281/zenodo.20793801)`
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
@@ -124,8 +124,7 @@ algorithm pseudocode with a pipeline flowchart. Large video files are hosted in 
 ## Citation
 
 ```
-Ahsan RA, Islam R, Hridi FR, Prianka MC, Rahman RM. Real-Time Infrared and Visible Video Fusion on
-Processor-Only Edge Hardware Using Vectorized Direct Mapping. Cureus Journal of Computer Science. (year).
+Ahsan R A, Islam R, Hridi F R, et al. (N/A) Real-Time Infrared and Visible Video Fusion on Processor-Only Edge Hardware Using Vectorized Direct Mapping. Cureus J Comput Sci : e. doi:https://doi.org/10.7759/
 ```
 
 ## Acknowledgements
