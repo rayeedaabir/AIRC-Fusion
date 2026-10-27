@@ -7,21 +7,15 @@ together with a lightweight **Temporal Instability Score** for measuring frame-t
 This repository accompanies the manuscript *"Real-Time Infrared and Visible Video Fusion on
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
-- **Paper DOI:** _to be added after publication_
+- **Paper DOI:** `[10.7759/s44389-026-00341-2](https://doi.org/10.7759/s44389-026-00341-2)`
 - **Archived code & data (Zenodo):** `[10.5281/zenodo.20793801](https://doi.org/10.5281/zenodo.20793801)`
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
 
-## Overview
+## Abstract
 
-Infrared and visible image fusion is dominated by methods that are accurate but too slow or too
-dependency-heavy for processor-only edge hardware, and most are evaluated only on static image pairs.
-This project shows that a classical direct-mapping algorithm, once fully vectorized into element-wise
-array operations, executes the **identical** arithmetic at video rate on a CPU. Nine fusion methods
-(classical, low-rank, and deep-learning) are benchmarked under identical CPU-only conditions on
-automotive (FLIR ADAS) and surveillance (CAMEL) video, across speed, structural fidelity, information
-content, and temporal stability.
+Infrared and visible image fusion enriches perception for night-time and low-visibility tasks such as driver assistance and surveillance, yet real-time deployment on processor-only edge hardware remains difficult: accurate deep-learning methods are slow and depend on a deep-learning runtime and graphics acceleration, whereas lightweight classical methods are frequently dismissed as too slow without separating the cost of the algorithm from the cost of its implementation, and most methods are designed for static image pairs and never assessed for temporal stability on video. In this article, we present a fully vectorized reformulation of the FCDFusion direct-mapping algorithm that expresses its per-pixel gain as image-wide array operations, executing the identical arithmetic at video frame rate on a general-purpose processor without graphics acceleration or a deep-learning runtime, and we introduce a lightweight, optical-flow-free temporal instability score that measures the frame-to-frame variation that a method injects beyond the natural motion of its sources. Nine fusion methods spanning the classical, low-rank and deep-learning families were benchmarked under identical processor-only conditions on automotive and surveillance video, across computational efficiency, structural fidelity, information content and temporal stability. Vectorization accelerated the identical computation by roughly 46 times on 1024 x 1024 automotive frames and by 95 to 106 times at surveillance resolution, with output identical at 8-bit precision and therefore no change in fidelity; the proposed method was the fastest evaluated, reaching about 24 frames per second on a 1024 x 1024 video and more than 900 frames per second at surveillance resolution while retaining near-best structural similarity and a temporal instability score at or near zero. Deep autoencoder fusion matched its fidelity and stability but ran roughly 40 times slower on the processor and required a deep-learning runtime, whereas methods that recompute their representation of each frame independently introduced substantial flicker that per-frame quality metrics did not detect. The complete framework was further deployed on a single-board computer, where it sustained the live fused feed at 51.2 frames per second while every comparison method remained below 10 frames per second on the same hardware. These results show that the implementation strategy, and not algorithmic design alone, determines the real-time feasibility of edge video fusion and that a rigorously optimized classical method can be simultaneously fast, faithful to the visible colour, temporally stable and free of software dependencies, making it an immediately deployable solution for processor-only infrared and visible perception.
 
 ## Repository structure
 
@@ -112,7 +106,10 @@ the environment if present. Everything runs on the CPU; no CUDA is required.
    python run_ablation.py --vis rgbnir_vis.png --ir rgbnir_ir.png --out_dir ablation_out
    ```
 
-Hardware used in the paper: AMD Ryzen 5 7600X (6-core), 32 GB RAM, GPU disabled.
+## Hardware used in the paper
+
+1. AMD Ryzen 5 7600X (6-core), 32 GB RAM, GPU disabled.
+2. Raspberry Pi 5, 8 GB RAM, CPU-only processor, no graphics acceleration.
 
 ## Supplementary materials
 
@@ -124,7 +121,10 @@ algorithm pseudocode with a pipeline flowchart. Large video files are hosted in 
 ## Citation
 
 ```
-Ahsan R A, Islam R, Hridi F R, et al. (N/A) Real-Time Infrared and Visible Video Fusion on Processor-Only Edge Hardware Using Vectorized Direct Mapping. Cureus J Comput Sci : e. doi:https://doi.org/10.7759/
+Rayeed A Ahsan, Rejmin Islam, Fariha R Hridi, Maria C Prianka, Rashedur M Rahman (2026).
+Real-Time Infrared and Visible Video Fusion on Processor-Only Edge Hardware Using Vectorized Direct Mapping.
+Cureus, 3(1), e7759/s44389-026-00341-2.
+https://doi.org/10.7759/s44389-026-00341-2
 ```
 
 ## Acknowledgements
