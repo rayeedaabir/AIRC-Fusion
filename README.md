@@ -121,10 +121,14 @@ algorithm pseudocode with a pipeline flowchart. Large video files are hosted in 
 ## Citation
 
 ```
-Rayeed A Ahsan, Rejmin Islam, Fariha R Hridi, Maria C Prianka, Rashedur M Rahman (2026).
-Real-Time Infrared and Visible Video Fusion on Processor-Only Edge Hardware Using Vectorized Direct Mapping.
-Cureus, 3(1), e7759/s44389-026-00341-2.
-https://doi.org/10.7759/s44389-026-00341-2
+@article{ahsan2026fusion,
+  author  = {Ahsan, Rayeed Aabir and Islam, Rejmin and Hridi, Fariha R. and Prianka, Maria C. and Rahman, Rashedur Mohammad},
+  title   = {Real-Time Infrared and Visible Video Fusion on Processor-Only Edge Hardware Using Vectorized Direct Mapping},
+  journal = {Cureus Journal of Computer Science},
+  volume  = {3}, number = {1}, year = {2026},
+  issn    = {3005-1487},
+  doi     = {10.7759/s44389-026-00341-2}
+}
 ```
 
 ## Acknowledgements
