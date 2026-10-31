@@ -8,7 +8,7 @@ This repository accompanies the manuscript *"Real-Time Infrared and Visible Vide
 Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal of Computer Science).
 
 - **Paper DOI:** [10.7759/s44389-026-00341-2](https://doi.org/10.7759/s44389-026-00341-2)
-- **Archived code & data (Zenodo):** [10.5281/zenodo.20793801](https://doi.org/10.5281/zenodo.20793801)
+- **Archived code & data (Zenodo):** [10.5281/zenodo.20793800](https://doi.org/10.5281/zenodo.20793800)
 - **License:** code MIT (see `LICENSE`); manuscript CC BY 4.0; datasets retain their own licenses.
 
 ---
