@@ -17,6 +17,32 @@ Processor-Only Edge Hardware Using Vectorized Direct Mapping"* (Cureus Journal o
 
 Infrared and visible image fusion enriches perception for night-time and low-visibility tasks such as driver assistance and surveillance, yet real-time deployment on processor-only edge hardware remains difficult: accurate deep-learning methods are slow and depend on a deep-learning runtime and graphics acceleration, whereas lightweight classical methods are frequently dismissed as too slow without separating the cost of the algorithm from the cost of its implementation, and most methods are designed for static image pairs and never assessed for temporal stability on video. In this article, we present a fully vectorized reformulation of the FCDFusion direct-mapping algorithm that expresses its per-pixel gain as image-wide array operations, executing the identical arithmetic at video frame rate on a general-purpose processor without graphics acceleration or a deep-learning runtime, and we introduce a lightweight, optical-flow-free temporal instability score that measures the frame-to-frame variation that a method injects beyond the natural motion of its sources. Nine fusion methods spanning the classical, low-rank and deep-learning families were benchmarked under identical processor-only conditions on automotive and surveillance video, across computational efficiency, structural fidelity, information content and temporal stability. Vectorization accelerated the identical computation by roughly 46 times on 1024 x 1024 automotive frames and by 95 to 106 times at surveillance resolution, with output identical at 8-bit precision and therefore no change in fidelity; the proposed method was the fastest evaluated, reaching about 24 frames per second on a 1024 x 1024 video and more than 900 frames per second at surveillance resolution while retaining near-best structural similarity and a temporal instability score at or near zero. Deep autoencoder fusion matched its fidelity and stability but ran roughly 40 times slower on the processor and required a deep-learning runtime, whereas methods that recompute their representation of each frame independently introduced substantial flicker that per-frame quality metrics did not detect. The complete framework was further deployed on a single-board computer, where it sustained the live fused feed at 51.2 frames per second while every comparison method remained below 10 frames per second on the same hardware. These results show that the implementation strategy, and not algorithmic design alone, determines the real-time feasibility of edge video fusion and that a rigorously optimized classical method can be simultaneously fast, faithful to the visible colour, temporally stable and free of software dependencies, making it an immediately deployable solution for processor-only infrared and visible perception.
 
+## Live demonstration
+
+VIDEO_URL_HERE
+
+*Demo of the proposed fusion method (Vectorized FCDFusion) running live on a Raspberry Pi 5.*
+
+## Method overview
+
+![Processing and evaluation pipeline of AIRC-Fusion](assets/system-diagram.png)
+*Processing and evaluation pipeline of AIRC-Fusion (module connections).*
+
+## Results
+
+![Processing speed across all methods and datasets](assets/speed-bar-chart.png)
+*Processing speed (frames per second, log scale) across all methods and datasets.*
+
+### Qualitative comparisons
+
+![FLIR ADAS glare scene: visible, infrared, and every method's fused output](assets/qual-flir-glare.png)
+*FLIR ADAS glare scene: visible, infrared, and the fused output of every method. (A) is the proposed Vectorized FCDFusion.*
+
+![Low-light CAMEL Sequence-13 comparison](assets/qual-camel-seq13.png)
+*Low-light CAMEL Sequence-13. (A) is the proposed Vectorized FCDFusion.*
+
+
+
 ## Repository structure
 
 ```
