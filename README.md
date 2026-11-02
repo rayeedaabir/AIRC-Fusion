@@ -19,7 +19,7 @@ Infrared and visible image fusion enriches perception for night-time and low-vis
 
 ## Live demonstration
 
-VIDEO_URL_HERE
+[Raspberry Pi 5 live-demonstration](https://github.com/user-attachments/assets/1eaf607c-6b38-4807-9de5-b899be2bbe87)
 
 *Demo of the proposed fusion method (Vectorized FCDFusion) running live on a Raspberry Pi 5.*
 
