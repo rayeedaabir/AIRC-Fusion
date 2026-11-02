@@ -41,7 +41,8 @@ Infrared and visible image fusion enriches perception for night-time and low-vis
 ![Low-light CAMEL Sequence-13 comparison](assets/qual-camel-seq13.png)
 *Low-light CAMEL Sequence-13. (A) is the proposed Vectorized FCDFusion.*
 
-
+![Pi live demo comparison between Vectorized FCDFusion and VGG-19 on low-light conditions using similar frames](assets/pi-demo-pic-comparison.png)
+*Qualitative comparison between Vectorized FCDFusion and VGG-19 on low-light conditions using similar frames.*
 
 ## Repository structure
 
